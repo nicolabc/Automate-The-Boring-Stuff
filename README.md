@@ -28,7 +28,7 @@ A checked box indicates whether or not the chapter is read and the practice proj
 - [x] Chapter 5 – Dictionaries and Structuring Data
 - [x] Chapter 6 – Manipulating Strings
 - [x] Chapter 7 – Pattern Matching with Regular Expressions
-- [x] Chapter 8 – Reading and Writing Files
+- [ ] Chapter 8 – Reading and Writing Files
 - [ ] Chapter 9 – Organizing Files
 - [ ] Chapter 10 – Debugging
 - [ ] Chapter 11 – Web Scraping
@@ -39,6 +39,10 @@ A checked box indicates whether or not the chapter is read and the practice proj
 - [ ] Chapter 16 – Sending Email and Text Messages
 - [ ] Chapter 17 – Manipulating Images
 - [ ] Chapter 18 – Controlling the Keyboard and Mouse with GUI Automation
+
+## Todo
+- [ ] Clean up repository w/ folders
+- [ ] Add task description for the different code solutions
 
 ## Contact
 
