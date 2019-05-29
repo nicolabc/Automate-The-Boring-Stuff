@@ -42,7 +42,6 @@ if __name__ == '__main__':
 
         # TODO: Loop through all 50 states, making a question for each.
         for questionNum in range(50):
-
             # Get right and wrong answers.
             correctAnswer = capitals[states[questionNum]]
             wrongAnswers = list(capitals.values()) #Get all values from the capitals list
@@ -50,6 +49,7 @@ if __name__ == '__main__':
             wrongAnswers = random.sample(wrongAnswers, 3)   #Randomly select 3 of the wrong answers
             answerOptions = wrongAnswers + [correctAnswer]
             random.shuffle(answerOptions)
+
 
             # Write the question and the answer options to the quiz file.
             quizFile.write('%s. What is the capital of %s?\n' % (questionNum + 1,states[questionNum]))
@@ -59,6 +59,6 @@ if __name__ == '__main__':
 
             # Write the answer key to a file.
             answerKeyFile.write('%s. %s\n' % (questionNum + 1, 'ABCD'[answerOptions.index(correctAnswer)]))
-            quizFile.close()
-            answerKeyFile.close()
+    quizFile.close()
+    answerKeyFile.close()
     sys.exit()
