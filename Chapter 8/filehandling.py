@@ -13,4 +13,9 @@ if __name__ == '__main__':
     print()
     print(helloRead)
 
+    baconFile = open('bacon.txt','w')
+    baconFile.write('Hello world \n')
+    baconFile.write('Bacon is not a vegetable')
+    baconFile.close()
+
     sys.exit()
