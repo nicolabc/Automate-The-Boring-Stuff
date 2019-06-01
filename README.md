@@ -43,6 +43,8 @@ A checked box indicates whether or not the chapter is read and the practice proj
 ## Todo
 - [ ] Clean up repository w/ folders
 - [ ] Add task description for the different code solutions
+Extra:
+- [ ] Add GUI to useful programs
 
 ## Contact
 
