@@ -45,6 +45,7 @@ A checked box indicates whether or not the chapter is read and the practice proj
 - [ ] Add task description for the different code solutions
 Extra:
 - [ ] Add GUI to useful programs
+- [ ] Create bash files to run programs via a simple click (Win10)
 
 ## Contact
 
