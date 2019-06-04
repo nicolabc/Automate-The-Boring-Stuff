@@ -5,8 +5,8 @@ course Automate the Boring Stuff with Python found [here](https://automatethebor
 ![](https://www.kidscodecs.com/wp-content/uploads/2015/06/notebook-automate-boring-stuff.jpg)
 # Motivation
 
-The course provides in depth guide to best practices in the python language and gives insights even 
-the most experience programmer could benefit from. It also shows how simple but tedious tasks could easily be
+The course provides an in depth guide to best practices in the python language and gives insights even 
+the most experience programmer could benefit from. It shows how simple but tedious tasks could easily be
 automated which I believe is quite powerful
 
 Environment: `Python3`
