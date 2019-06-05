@@ -1,6 +1,6 @@
 #This is a program exploring what is called "The simplest impossible math problem" called Collatz sequence.
 # You can read more about it here: https://en.wikipedia.org/wiki/Collatz_conjecture
-
+#This is from chapter 3 (Practice project)
 
 def collatz(num):
     if num%2 == 0:
