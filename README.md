@@ -46,6 +46,7 @@ A checked box indicates whether or not the chapter is read and the practice proj
 Extra:
 - [ ] Add GUI to useful programs
 - [ ] Create bash files to run programs via a simple click (Win10)
+- [ ] Next project: https://inventwithpython.com/cracking/ (?)
 
 ## Contact
 
