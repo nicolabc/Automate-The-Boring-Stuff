@@ -22,9 +22,10 @@ os.chdir('C:\\')
 ## TODO: Read file & imput word corresponding to correct word class
 
 if __name__ == '__main__':
-    if len(sys.argv) >= 3 and ".txt" in sys.argv[1].lower():
+
+    if len(sys.argv) >= 2 and ('.txt' in sys.argv[1]):
         myFile = open(sys.argv[1],'w')
-        print(sys.argv[1])
+        #print(sys.argv[1])
         myFile.close()
     else:
         print('ERROR: Missing a .txt file as input argument to file')
