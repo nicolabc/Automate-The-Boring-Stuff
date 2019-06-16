@@ -24,9 +24,20 @@ os.chdir('C:\\')
 if __name__ == '__main__':
 
     if len(sys.argv) >= 2 and ('.txt' in sys.argv[1]):
-        myFile = open(sys.argv[1],'w')
-        #print(sys.argv[1])
+        myFile = open(sys.argv[1],'r+')
+        fileContent = myFile.read()
+        print(fileContent)
+        # Go through each word and replace with input
+        for word in fileContent:
+            if word.toUpper() == 'ADJECTIVE' or word.toUpper() == 'NOUN' or word.toUpper() == 'VERB':
+                print('Please enter a word for the '+ word)
+            print(word)
         myFile.close()
     else:
         print('ERROR: Missing a .txt file as input argument to file')
     sys.exit()
+
+
+
+
+
