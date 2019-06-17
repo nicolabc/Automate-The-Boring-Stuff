@@ -39,23 +39,16 @@ if __name__ == '__main__':
                     a = 'an' if foundWord.group() == 'ADJECTIVE' else 'a'  # Simply to print an or a depending on the word
                     print('Please enter ' + a + ' ' + word.lower() + ":")
                     # try:
-                    newAllWords.append(input())
+
+                    newAllWords.append(wordRegex.sub(input(),word))
                     # except:
                     continue
                 newAllWords.append(word)
-        #print(newAllWords)
-        saveFile = open(sys.argv[1]+'Completed','w')
-        '''for word in allWords:#allMatchingWords:
-            if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
-                a = 'an' if word.upper() == 'ADJECTIVE' else 'a' #Simply to print an or a depending on word
-                print('Please enter '+ a +' '+ word.lower()+":")
-                #try:
-                allWords = input()
-                #except:
-            i+=1'''
-
-
-
+        newFileName = sys.argv[1].split(".")[0].join("Completed")
+        with open('your_text.txt', 'w') as saveFile:
+            for item in newAllWords:
+                saveFile.write(str(item)+' ')
+        saveFile.close()
         myFile.close()
     else:
         print('ERROR: Missing a .txt file as input argument to file')
