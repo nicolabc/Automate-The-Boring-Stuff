@@ -36,19 +36,16 @@ if __name__ == '__main__':
         # or this snippet:
         allWords = map(lambda l: l.split(" "), myFile.readlines())
         allWords = list(allWords)
-        #print(allWords[0][0])
-        i = 0
         # Go through each word and replace with input
-        for i in allWords:
-            for j in i:
-                print(i)
-                print(j)
-            '''if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
-                a = 'an' if word.upper() == 'ADJECTIVE' else 'a'  # Simply to print an or a depending on word
-                print('Please enter ' + a + ' ' + word.lower() + ":")
-                # try:
-                allWords = input()
-                # except:'''
+        for line in allWords:
+            for word in line:
+                print(word)
+                if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
+                    a = 'an' if word.upper() == 'ADJECTIVE' else 'a'  # Simply to print an or a depending on the word
+                    print('Please enter ' + a + ' ' + word.lower() + ":")
+                    # try:
+                    allWords = input()
+                    # except:
         '''for word in allWords:#allMatchingWords:
             if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
                 a = 'an' if word.upper() == 'ADJECTIVE' else 'a' #Simply to print an or a depending on word

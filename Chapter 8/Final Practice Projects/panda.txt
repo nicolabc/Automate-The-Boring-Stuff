@@ -1,3 +1,4 @@
 The ADJECTIVE panda walked to the NOUN and then VERB. A nearby NOUN was
-unaffected by these events. The following day the panda VERB home with his newly aquired NOUN. It was ADJECTIVE, but nevertheless
-was proud about it. 
+unaffected by these events. The panda went home with 
+his newly aquired NOUN. It was ADJECTIVE, but he was nevertheless
+proud about it. 
