@@ -25,27 +25,26 @@ if __name__ == '__main__':
 
     if len(sys.argv) >= 2 and ('.txt' in sys.argv[1]):
         myFile = open(sys.argv[1],'r+')
-        #fileContent = myFile.read()
-        #print(fileContent)
-
-        # Use RegEx to find all words (upper- and lowercase) larger than 4 and smaller than 9 (covers possible NOUN, VERB and ADJECTIVE)
-        #allMatchingWords = re.findall(r'\b[a-åA-Å]{4,9}\b', fileContent)
-        # Could also have split each line by space
-        # for i in lines:
-        #    thisline = i.split(" ");
-        # or this snippet:
         allWords = map(lambda l: l.split(" "), myFile.readlines())
         allWords = list(allWords)
+        newAllWords = []
+        wordRegex = re.compile(r'ADJECTIVE|NOUN|VERB')
         # Go through each word and replace with input
         for line in allWords:
             for word in line:
-                print(word)
-                if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
-                    a = 'an' if word.upper() == 'ADJECTIVE' else 'a'  # Simply to print an or a depending on the word
+                if wordRegex.search(word.upper()):
+                #could also used a modified version of the following, but need to take "," and "." into account
+                #if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
+                    foundWord = wordRegex.search(word.upper())
+                    a = 'an' if foundWord.group() == 'ADJECTIVE' else 'a'  # Simply to print an or a depending on the word
                     print('Please enter ' + a + ' ' + word.lower() + ":")
                     # try:
-                    allWords = input()
+                    newAllWords.append(input())
                     # except:
+                    continue
+                newAllWords.append(word)
+        #print(newAllWords)
+        saveFile = open(sys.argv[1]+'Completed','w')
         '''for word in allWords:#allMatchingWords:
             if word.upper() == 'ADJECTIVE' or word.upper() == 'NOUN' or word.upper() == 'VERB':
                 a = 'an' if word.upper() == 'ADJECTIVE' else 'a' #Simply to print an or a depending on word
