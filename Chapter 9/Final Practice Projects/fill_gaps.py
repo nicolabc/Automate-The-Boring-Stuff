@@ -36,9 +36,15 @@ if __name__ == '__main__':
     for val in foundPrefixes:
         if missingFiles[i]<val:
             missingPrefix = str(missingFiles[i]).zfill(prefixLength)
+            oldPrefix = str(val).zfill(prefixLength)
+            oldFileName = generalFileName[0]+oldPrefix+generalFileName[1]
             newFileName = generalFileName[0]+missingPrefix+generalFileName[1]
             print(newFileName)
+            path = os.path.relpath(os.path.join(root, oldFileName), ".")
+            print(path)
             #shutil.move()
+            # Bytt navn og fjern fra liste
+            # Legg til gamle navn i lista og move on. sort the list DONE!
             i += 1
     sys.exit()
 
