@@ -11,7 +11,7 @@ automated which I believe is quite powerful
 
 Environment: `Python3`
 
-## Installation
+## Installation 
 
 ```sh
 git clone https://github.com/nicolabc/Automate-The-Boring-Stuff
