@@ -32,6 +32,9 @@ if __name__ == '__main__':
                 foundPrefixes.append(int(prefix.search(f).group(0)))
 
     missingFiles = findMissingPrefix(foundPrefixes)
+
+    # Rename missing files. Iterate foundPrefixes until a missing number is found. Rename to the
+    # missing name and add the old name as a missing name. Sort the list
     i = 0
     for val in foundPrefixes:
         if missingFiles[i]<val:
@@ -39,13 +42,15 @@ if __name__ == '__main__':
             oldPrefix = str(val).zfill(prefixLength)
             oldFileName = generalFileName[0]+oldPrefix+generalFileName[1]
             newFileName = generalFileName[0]+missingPrefix+generalFileName[1]
-            print(newFileName)
             path = os.path.relpath(os.path.join(root, oldFileName), ".")
-            print(path)
-            #shutil.move()
-            # Bytt navn og fjern fra liste
-            # Legg til gamle navn i lista og move on. sort the list DONE!
-            i += 1
+            newNamePath = os.path.relpath(os.path.join(root,newFileName), ".")
+            print(path + ' was renamed to:')
+            print(newNamePath)
+            shutil.move(path, newNamePath)
+            missingFiles[i] = val
+            missingFiles.sort()
+            print('')
+            i += 0
     sys.exit()
 
 
