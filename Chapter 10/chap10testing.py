@@ -16,6 +16,11 @@ if __name__ == '__main__':
     # assert value == 1,'HAS TO BE 1!!'
     # print(value)
 
+    #logging.debug()
+    #logging.info()
+    #logging.warning()
+    #logging.error()
+    #logging.critical()
     logging.disable(logging.CRITICAL)
 
     sys.exit()
