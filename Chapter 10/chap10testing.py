@@ -8,8 +8,8 @@ if __name__ == '__main__':
     # podBayDoorStatus = 'I\'m sorry, Dave. I\'m afraid I can\'t do that.'
     # assert podBayDoorStatus == 'open', 'The pod bay doors need to be "open".'
 
-    ## Assertion
-
+    ## Assertion. This is to be certain that a variable has the correct critical value
+    
     # value = 1
     # assert value == 1,'HAS TO BE 1!'
     # value += 1
@@ -22,5 +22,5 @@ if __name__ == '__main__':
     #logging.error()
     #logging.critical()
     logging.disable(logging.CRITICAL)
-
+    
     sys.exit()
