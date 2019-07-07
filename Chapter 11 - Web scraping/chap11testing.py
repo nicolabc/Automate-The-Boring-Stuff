@@ -33,4 +33,4 @@ print(elems[0].getText())
 print(str(elems[0]))
 print(elems[0].attrs)
 
-# BeutifulSoup
+# BeautifulSoup 4
