@@ -28,10 +28,10 @@ A checked box indicates whether or not the chapter is read and the practice proj
 - [x] Chapter 5 – Dictionaries and Structuring Data
 - [x] Chapter 6 – Manipulating Strings
 - [x] Chapter 7 – Pattern Matching with Regular Expressions
-- [ ] Chapter 8 ––> Reading and Writing Files [50% done]<––
-- [ ] Chapter 9 – Organizing Files
-- [ ] Chapter 10 – Debugging
-- [ ] Chapter 11 – Web Scraping
+- [x] Chapter 8 - Reading and Writing Files
+- [x] Chapter 9 – Organizing Files
+- [x] Chapter 10 – Debugging
+- [ ] Chapter 11 – Web Scraping [50%]
 - [ ] Chapter 12 – Working with Excel Spreadsheets
 - [ ] Chapter 13 – Working with PDF and Word Documents
 - [ ] Chapter 14 – Working with CSV Files and JSON Data
