@@ -23,4 +23,6 @@ if __name__ == '__main__':
     #logging.critical()
     logging.disable(logging.CRITICAL)
     
+    # Logging is preferred over printing as a printing may interfere with the execution of the code
+    
     sys.exit()
