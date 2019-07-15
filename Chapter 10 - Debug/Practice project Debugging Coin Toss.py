@@ -1,4 +1,5 @@
 # The task given was to fix bugs in the given code. This is my solution
+# Note that there may be better solutions and that this was an intiutive one for me
 import random
 guess = ''
 guessDict = {'tails':0,'heads':1} #Map input to a number
