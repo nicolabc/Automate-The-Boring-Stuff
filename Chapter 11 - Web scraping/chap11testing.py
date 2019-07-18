@@ -32,8 +32,7 @@ print(type(elems[0]))
 print(elems[0].getText())
 print(str(elems[0]))
 print(elems[0].attrs)
-
-# BeautifulSoup 4
+# bs4
 # Documentation: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 # Note that RegEx is not possible on <html> websites. It does not parse well...
 # See this note: https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags
