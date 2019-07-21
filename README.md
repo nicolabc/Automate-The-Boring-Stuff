@@ -31,7 +31,7 @@ A checked box indicates whether or not the chapter is read and the practice proj
 - [x] Chapter 8 - Reading and Writing Files
 - [x] Chapter 9 – Organizing Files
 - [x] Chapter 10 – Debugging
-- [ ] Chapter 11 – Web Scraping [50%]
+- [ ] Chapter 11 – Web Scraping [50%] <---
 - [ ] Chapter 12 – Working with Excel Spreadsheets
 - [ ] Chapter 13 – Working with PDF and Word Documents
 - [ ] Chapter 14 – Working with CSV Files and JSON Data
