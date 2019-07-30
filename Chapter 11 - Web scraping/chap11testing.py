@@ -39,3 +39,4 @@ print(elems[0].attrs)
 # See this note: https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags
 # Note to self: Remember to update the Readme occasionally!! 
 # This needs more priority. I will get better at doing small tasks every day on this course
+# Still needs priority. Get it together!
